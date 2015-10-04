@@ -6,8 +6,8 @@ let router = require('koa-router')();
 app.use(bodyParser());
 
 router.post('/authenticate', function *() {
-  console.log('username : ' + this.request.body.userName);
-  console.log('accessToken : ' + this.request.body.accessToken);
+  console.log('user name : ' + this.request.body.userName);
+  console.log('access token : ' + this.request.body.accessToken);
   this.response.status = 200;
 });
 

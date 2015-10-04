@@ -1,8 +1,8 @@
 # GachaServer
 ## APIs
 
-POST /authenticate
-{
-    userName: userName,
-    accessToken: accessToken
-}
+    POST /authenticate
+    {
+        userName: userName,
+        accessToken: accessToken
+    }
