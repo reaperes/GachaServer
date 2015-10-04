@@ -3,6 +3,6 @@
 
     POST /authenticate
     {
-        userName: userName,
+        userId: userId,
         accessToken: accessToken
     }
