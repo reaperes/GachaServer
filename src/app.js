@@ -1,7 +1,11 @@
 var app = require('koa')();
+var router = require('koa-router')();
 
-app.use(function *() {
-  this.body = 'Hello World';
+router.get('/', function *() {
+  this.body = 'Hello world!';
 });
+
+app.use(router.routes())
+   .use(router.allowedMethods());
 
 app.listen(8080);
